@@ -1,0 +1,9 @@
+    {"size":10}
+    EOF
+
+    echo test
+
+    cat <<EOF > ./out1.test
+    {"size":10}
+    EOF
+    
