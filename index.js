@@ -3,6 +3,7 @@ const parse = require('./parse')
 const handlebars = require('handlebars')
 const data = require('./data.json')
 const query = require('./query.json')
+const fs = require('fs')
 
 
 async function parseData(){
