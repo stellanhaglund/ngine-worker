@@ -14,7 +14,7 @@ async function parseData(){
         // str += `${parsed[i].environment} ${template(query)}`
     }
 
-    // fs.writeFileSync('./out.txt', str)
+    fs.writeFileSync('./out.txt', `${parsed[i].environment} "${template(query)}"`)
 }
 
 parseData()
