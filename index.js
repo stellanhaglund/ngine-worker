@@ -12,7 +12,7 @@ async function parseData(){
     for(let i = 0; i < parsed.length; i++){
         let template = handlebars.compile(parsed[i].snippets[0])
         exec(`${parsed[i].environment} "${template(query)}"`, {stdio: 'inherit'})
-        fs.writeFileSync('./out.txt', `${parsed[i].environment} "${template(query)}"`)
+        fs.writeFileSync('./out.txt', `${parsed[i].environment} ${template(query)}`)
         // str += `${parsed[i].environment} ${template(query)}`
     }
 
